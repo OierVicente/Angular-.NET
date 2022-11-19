@@ -1,0 +1,9 @@
+.div_contenedor{
+  height: 100vh;
+}
+.div_centrado{
+  position: absolute;
+  top:30%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}

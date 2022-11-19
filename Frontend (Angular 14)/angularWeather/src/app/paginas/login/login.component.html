@@ -1,0 +1,64 @@
+<div class="container-fluid px-4 pt-3">
+<div class="w-100 row">
+    <div class="col-1">
+      <button class="btn btn-primary btn-block" routerLinkActive="active" routerLink="/">Volver</button>
+  </div>
+  <div class="col-9"></div>
+  <div class="col-2">
+    <label class="switch text-end pr-4">
+      <input type="checkbox" class="toggle" (click)="switchTheme()">
+      <span class="slider"></span>
+    </label>
+  </div>
+</div>
+
+<div class="container p-3">
+  <div class="row justify-content-center">
+  <div class="col-md-6 col-lg-5">
+  <div class="login-wrap p-4 p-md-5">
+  <div class="icon d-flex align-items-center justify-content-center">
+  <span class="fa fa-user-o"></span>
+  </div>
+  <h3 class="text-center mb-4">Login</h3>
+  <!-- <form class="login-form" (ngSubmit)="onLogin()" [formGroup]="loginForm" #ngForm="ngForm"> -->
+  <form class="login-form" [formGroup]="loginForm" (ngSubmit)="onLogin()">
+    <div class="form-group">
+      <input type="text" id="inputEmail" class="form-control rounded-left" placeholder="Usuario" formControlName="usuario">
+      <!-- Validaciones Usuario -->
+      <div class="my-3">
+        <div *ngIf="loginForm.get('usuario')?.touched && loginForm.get('usuario')?.errors?.['required']" class="alert alert-danger">Este campo es requerido.</div>
+        <div *ngIf="loginForm.get('usuario')?.touched && loginForm.get('usuario')?.errors?.['minlength']" class="alert alert-danger">El usuario debe ser más largo que
+                  {{ loginForm.get('usuario')?.errors?.['minlength']?.requiredLength}} caracteres.</div>
+      </div>
+
+    </div>
+    <div class="form-group">
+      <input type="password" id="inputPassword" class="form-control rounded-left" placeholder="Contraseña" formControlName="password">
+      <!-- Validaciones Password -->
+      <div class="my-3">
+          <div *ngIf="loginForm.get('password')?.touched && loginForm.get('password')?.errors?.['required']" class="alert alert-danger">Este campo es requerido.</div>
+          <div *ngIf="loginForm.get('password')?.touched && loginForm.get('password')?.errors?.['minlength']" class="alert alert-danger">El usuario debe ser más largo que
+                  {{ loginForm.get('password')?.errors?.['minlength']?.requiredLength}} caracteres.</div>
+      </div>
+
+    </div>
+    <div class="form-group d-md-flex">
+        <div class="w-50">
+          <label class="checkbox-wrap checkbox-primary">Recordarme
+            <input type="checkbox" id="recuerdame" name="recuerdame" formControlName="recuerdame">
+            <span class="checkmark"></span>
+          </label>
+        </div>
+        <div class="w-50 text-md-right">
+            <a href="#">Has olvidado tu contraseña  </a>
+        </div>
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary rounded submit p-3 px-5" [disabled]="!loginForm.valid">Iniciar sesión</button>
+    </div>
+  </form>
+  </div>
+  </div>
+  </div>
+  </div>
+</div>

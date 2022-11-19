@@ -1,0 +1,29 @@
+<app-menu></app-menu>
+<div class="p-4">
+    <div>
+      <div class="centrarDiv">
+        <div class="card card-body position-relative">
+        <img width="180" alt="Logo" width="100" height="100" src="https://cdn-icons-png.flaticon.com/512/2105/2105242.png" class="mx-auto mb-4">
+          <form (submit)="submitFormulario(nombreCiudad)">
+            <input type="text" placeholder="Nombre de la ciudad" class="form-control" autofocus #nombreCiudad>
+            <button class="btn btn-primary btn-block mt-2">
+              Obtener Clima
+            </button>
+          </form>
+          <div *ngIf="clima" class="text-center mt-4">
+            <h1 class="h4">Información de {{clima.name}}</h1>
+            <!-- <p>Fecha Pipe String: {{'01/01/2000' | date | uppercase}} </p> -->
+            <!-- <p>Precio: {{'999' | currency:'EUR'}} </p> -->
+            <p>Temperatura: {{clima.main.temp}} °C</p>
+            <p>Longitud: {{clima.coord.lon}}</p>
+            <p>Latitud: {{clima.coord.lat}}</p>
+            <p>Humedad: {{clima.main.humidity}} %</p>
+            <p>Presión: {{clima.main.pressure}}</p>
+            <!-- <p>Descripción: {{descripcion | titlecase}}</p> -->
+            <p>Descripción: {{this.clima.weather[0].description | titlecase}}</p>
+            <p><img *ngIf="iconSrc" width="100" height="100" [src]="iconSrc" /></p>
+          </div>
+        </div>
+    </div>
+    </div>
+  </div>

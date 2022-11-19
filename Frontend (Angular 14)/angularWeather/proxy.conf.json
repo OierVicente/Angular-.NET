@@ -1,0 +1,7 @@
+{
+ "/Minimal_API/*":{
+    "target":"https://localhost:7278",
+    "secure":false,
+    "logLevel":"debug"
+ }
+}

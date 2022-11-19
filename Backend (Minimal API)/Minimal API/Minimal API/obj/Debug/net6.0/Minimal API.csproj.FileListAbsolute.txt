@@ -1,0 +1,68 @@
+C:\Users\Oier\source\repos\Minimal API\Minimal API\obj\Debug\net6.0\Minimal API.csproj.AssemblyReference.cache
+C:\Users\Oier\source\repos\Minimal API\Minimal API\obj\Debug\net6.0\Minimal API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Oier\source\repos\Minimal API\Minimal API\obj\Debug\net6.0\Minimal API.AssemblyInfoInputs.cache
+C:\Users\Oier\source\repos\Minimal API\Minimal API\obj\Debug\net6.0\Minimal API.AssemblyInfo.cs
+C:\Users\Oier\source\repos\Minimal API\Minimal API\obj\Debug\net6.0\Minimal API.csproj.CoreCompileInputs.cache
+C:\Users\Oier\source\repos\Minimal API\Minimal API\obj\Debug\net6.0\Minimal API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Oier\source\repos\Minimal API\Minimal API\obj\Debug\net6.0\Minimal API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Oier\source\repos\Minimal API\Minimal API\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Oier\source\repos\Minimal API\Minimal API\bin\Debug\net6.0\appsettings.json
+C:\Users\Oier\source\repos\Minimal API\Minimal API\bin\Debug\net6.0\libman.json
+C:\Users\Oier\source\repos\Minimal API\Minimal API\bin\Debug\net6.0\Minimal API.exe
+C:\Users\Oier\source\repos\Minimal API\Minimal API\bin\Debug\net6.0\Minimal API.deps.json
+C:\Users\Oier\source\repos\Minimal API\Minimal API\bin\Debug\net6.0\Minimal API.runtimeconfig.json
+C:\Users\Oier\source\repos\Minimal API\Minimal API\bin\Debug\net6.0\Minimal API.dll
+C:\Users\Oier\source\repos\Minimal API\Minimal API\bin\Debug\net6.0\Minimal API.pdb
+C:\Users\Oier\source\repos\Minimal API\Minimal API\bin\Debug\net6.0\Humanizer.dll
+C:\Users\Oier\source\repos\Minimal API\Minimal API\bin\Debug\net6.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+C:\Users\Oier\source\repos\Minimal API\Minimal API\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\Oier\source\repos\Minimal API\Minimal API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Oier\source\repos\Minimal API\Minimal API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Oier\source\repos\Minimal API\Minimal API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Oier\source\repos\Minimal API\Minimal API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Oier\source\repos\Minimal API\Minimal API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Oier\source\repos\Minimal API\Minimal API\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Oier\source\repos\Minimal API\Minimal API\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\Oier\source\repos\Minimal API\Minimal API\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Oier\source\repos\Minimal API\Minimal API\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Oier\source\repos\Minimal API\Minimal API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Oier\source\repos\Minimal API\Minimal API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Oier\source\repos\Minimal API\Minimal API\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Oier\source\repos\Minimal API\Minimal API\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\Oier\source\repos\Minimal API\Minimal API\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Oier\source\repos\Minimal API\Minimal API\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Oier\source\repos\Minimal API\Minimal API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Oier\source\repos\Minimal API\Minimal API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Oier\source\repos\Minimal API\Minimal API\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Oier\source\repos\Minimal API\Minimal API\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\Oier\source\repos\Minimal API\Minimal API\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Oier\source\repos\Minimal API\Minimal API\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Users\Oier\source\repos\Minimal API\Minimal API\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Oier\source\repos\Minimal API\Minimal API\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\Oier\source\repos\Minimal API\Minimal API\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\Oier\source\repos\Minimal API\Minimal API\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Oier\source\repos\Minimal API\Minimal API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Oier\source\repos\Minimal API\Minimal API\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Oier\source\repos\Minimal API\Minimal API\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Oier\source\repos\Minimal API\Minimal API\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Oier\source\repos\Minimal API\Minimal API\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Oier\source\repos\Minimal API\Minimal API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Oier\source\repos\Minimal API\Minimal API\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Oier\source\repos\Minimal API\Minimal API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Oier\source\repos\Minimal API\Minimal API\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\Oier\source\repos\Minimal API\Minimal API\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Oier\source\repos\Minimal API\Minimal API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\Oier\source\repos\Minimal API\Minimal API\obj\Debug\net6.0\staticwebassets\msbuild.Minimal API.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Oier\source\repos\Minimal API\Minimal API\obj\Debug\net6.0\staticwebassets\msbuild.build.Minimal API.props
+C:\Users\Oier\source\repos\Minimal API\Minimal API\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Minimal API.props
+C:\Users\Oier\source\repos\Minimal API\Minimal API\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Minimal API.props
+C:\Users\Oier\source\repos\Minimal API\Minimal API\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\Oier\source\repos\Minimal API\Minimal API\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Oier\source\repos\Minimal API\Minimal API\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Oier\source\repos\Minimal API\Minimal API\obj\Debug\net6.0\scopedcss\bundle\Minimal API.styles.css
+C:\Users\Oier\source\repos\Minimal API\Minimal API\obj\Debug\net6.0\Minimal API.csproj.CopyComplete
+C:\Users\Oier\source\repos\Minimal API\Minimal API\obj\Debug\net6.0\Minimal API.dll
+C:\Users\Oier\source\repos\Minimal API\Minimal API\obj\Debug\net6.0\refint\Minimal API.dll
+C:\Users\Oier\source\repos\Minimal API\Minimal API\obj\Debug\net6.0\Minimal API.pdb
+C:\Users\Oier\source\repos\Minimal API\Minimal API\obj\Debug\net6.0\Minimal API.genruntimeconfig.cache
+C:\Users\Oier\source\repos\Minimal API\Minimal API\obj\Debug\net6.0\ref\Minimal API.dll
