@@ -8,6 +8,7 @@ import { Component, Inject, OnInit, Renderer2 } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
   theme: Theme = 'light-theme';
+  usuarioLogeado!:String;
 
   constructor(
     @Inject(DOCUMENT) private document: Document,
@@ -16,6 +17,7 @@ export class MenuComponent implements OnInit {
 
   ngOnInit() {
     this.initializeTheme();
+    this.usuarioLogeado = this.getLocalStorageByKey("loginNombreUsuario");
   }
 
   initializeTheme = (): void =>
@@ -29,6 +31,15 @@ export class MenuComponent implements OnInit {
         ? (this.theme = 'dark-theme')
         : (this.theme = 'light-theme')
     );
+  }
+
+  getLocalStorageByKey(Key:string):string{
+    return String(localStorage.getItem(Key));
+  }
+
+  cerrarSesion():void{
+    localStorage.clear();
+    window.location.reload();
   }
 
 }

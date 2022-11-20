@@ -15,8 +15,14 @@
         <li class="nav-item">
           <a class="nav-item nav-link" routerLink="/usuarios">Usuarios</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" *ngIf="usuarioLogeado == 'null'">
           <a class="nav-item nav-link" routerLink="/login">Login</a>
+        </li>
+        <li class="nav-item" *ngIf="usuarioLogeado != 'null'">
+          <a class="nav-item nav-link" >¡Hola! Bienvenido/a {{usuarioLogeado}} !</a>
+        </li>
+        <li class="nav-item pl-4" *ngIf="usuarioLogeado != 'null'">
+          <button class="nav-item nav-link" (click)="cerrarSesion()" >Cerrar Sesion</button>
         </li>
       </ul>
       <form class="form-inline my-2 my-lg-0">

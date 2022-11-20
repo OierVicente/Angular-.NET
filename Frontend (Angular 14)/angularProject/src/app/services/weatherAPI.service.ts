@@ -12,6 +12,7 @@ export class WeatherService {
 
   constructor(private httpClient: HttpClient) {
       this.URI= environment.apiWeather+`/data/2.5/weather?appid=${this.apiKey}&units=metric&lang=es&q=`;
+      //https://api.openweathermap.org/data/2.5/weather?appid=d74018e0f1338b55b1cfc648d3bf4f3c&units=metric&lang=es&q=
    }
 
    getWeather(nombreCiudad:string){

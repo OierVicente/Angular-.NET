@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule } from '@angular/common/http';
-
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { ClimaComponent } from './paginas/clima/clima.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
@@ -14,6 +13,10 @@ import { UsuariosComponent } from './paginas/usuarios/usuarios.component';
 import { DataTablesModule } from "angular-datatables";
 import { PasswordPipe } from './Pipes/filter.password';
 import { FilterPipe } from './Pipes/filter.pipe';
+import { AutocompleteLibModule } from 'angular-ng-autocomplete';
+import { DiccionarioComponent } from './paginas/diccionario/diccionario.component';
+import { SpinnerComponent } from './shared/spinner/spinner.component';
+import { SpinnerInterceptor } from './shared/spinner.interceptor';
 
 
 @NgModule({
@@ -26,7 +29,9 @@ import { FilterPipe } from './Pipes/filter.pipe';
     UsuarioFormComponent,
     UsuariosComponent,
     PasswordPipe,
-    FilterPipe
+    FilterPipe,
+    DiccionarioComponent,
+    SpinnerComponent
   ],
   imports: [
     BrowserModule,
@@ -34,9 +39,12 @@ import { FilterPipe } from './Pipes/filter.pipe';
     ReactiveFormsModule,
     FormsModule,
     AppRoutingModule,
-    DataTablesModule
+    DataTablesModule,
+    AutocompleteLibModule
   ],
-  providers: [],
+  providers: [
+    {provide: HTTP_INTERCEPTORS, useClass: SpinnerInterceptor,multi:true },
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -10,7 +10,8 @@ import { DOCUMENT } from '@angular/common';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  styleUrls: ['./login.component.css'],
+  providers: [minimalAPI]
 })
 export class LoginComponent implements OnInit {
 
@@ -28,7 +29,7 @@ export class LoginComponent implements OnInit {
     return new FormGroup({
       usuario: new FormControl('',[Validators.required, Validators.minLength(3)]),
       password: new FormControl('',[Validators.required, Validators.minLength(3)]),
-      recuerdame: new FormControl(true)
+      recuerdame: new FormControl(true,[Validators.required])
     });
   }
   // get usuario() { return this.loginForm.get('usuario'); }
@@ -68,15 +69,23 @@ export class LoginComponent implements OnInit {
     console.log(this.loginForm.value);
 
     if(this.loginForm.valid){
+      let nombreUsuario = this.loginForm.value.usuario;
+      let recuerdame = this.loginForm.value.recuerdame;
       this.loginForm.disable();
       // await new Promise(f => setTimeout(f, 4000));
         this.minimalApi.login(this.loginForm.value.usuario,this.loginForm.value.password).subscribe(
         data => {
           console.log("data =>",data);
+          if(recuerdame == true){
+            localStorage.setItem("loginData",JSON.stringify(data));
+            localStorage.setItem("loginNombreUsuario",nombreUsuario);
+          }
+
           this.onResetloginFrom();
           // this.router.navigateByUrl('/clima');
           // this.router.navigate(['app-clima'],{queryParams: {name: 'Oier'}});
           // this.router.navigate(['app-clima']);
+
           this.router.navigate(['/clima']);
           },
           error => {

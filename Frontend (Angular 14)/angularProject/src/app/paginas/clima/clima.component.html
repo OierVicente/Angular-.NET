@@ -4,12 +4,37 @@
       <div class="centrarDiv">
         <div class="card card-body position-relative">
         <img width="180" alt="Logo" width="100" height="100" src="https://cdn-icons-png.flaticon.com/512/2105/2105242.png" class="mx-auto mb-4">
-          <form (submit)="submitFormulario(nombreCiudad)">
+          <!-- <form (submit)="submitFormulario(nombreCiudad)">
             <input type="text" placeholder="Nombre de la ciudad" class="form-control" autofocus #nombreCiudad>
             <button class="btn btn-primary btn-block mt-2">
               Obtener Clima
             </button>
+          </form> -->
+          <!-- Prueba -->
+          <form (ngSubmit)="submitClimaForm()" [formGroup]="climaForm">
+            <!-- <input type="text" placeholder="Nombre de la ciudad" class="form-control" autofocus #nombreCiudad> -->
+            <div class="ng-autocomplete">
+              <ng-autocomplete type="text" placeholder="Nombre de la ciudad" autofocus formControlName="objetoCiudad"
+                [data]="listaCiudades"
+                [searchKeyword]="keyword"
+                placeholder="Escriba el nombre de una ciudad española"
+                [itemTemplate]="itemTemplate"
+                [notFoundTemplate]="notFoundTemplate">
+              </ng-autocomplete>
+
+              <ng-template #itemTemplate let-item>
+              <a [innerHTML]="item.name"></a>
+              </ng-template>
+
+              <ng-template #notFoundTemplate let-notFound>
+              <div [innerHTML]="notFound"></div>
+              </ng-template>
+            </div>
+            <button class="btn btn-primary btn-block mt-2">
+              Obtener Clima
+            </button>
           </form>
+
           <div *ngIf="clima" class="text-center mt-4">
             <h1 class="h4">Información de {{clima.name}}</h1>
             <!-- <p>Fecha Pipe String: {{'01/01/2000' | date | uppercase}} </p> -->
